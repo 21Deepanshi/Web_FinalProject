@@ -1,0 +1,111 @@
+.book-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    min-height: 100vh;      
+    padding: 20px;
+    background-color: #f9f9f9;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.book-details > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.book-cover {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.book-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.book-info h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+.book-info p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.book-info p strong {
+    color: #000;
+    font-weight: bold;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #060606;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #1d1d1d;
+    transform: scale(1.05); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn:focus {
+    outline: none; 
+    box-shadow: 0px 0px 5px 2px #303030; 
+}
+@media (max-width: 768px) {
+    .book-details > div {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

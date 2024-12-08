@@ -1,0 +1,89 @@
+/* General Styles for Home Page */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Book List Section */
+.bookList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Center content */
+    align-items: center;
+}
+
+/* Book Item */
+.bookItem {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bookItem:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Cover Image */
+.bookCover {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Consistent height for images */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Book Title */
+.bookItem h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.bookItem p{
+    font-size: 0.9rem;
+    color: #060606;
+}
+/* View Details Button */
+.view-details-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #060606;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-details-btn:hover {
+    background-color: #1d1d1d;
+    transform: scale(1.05);
+}
+
+.view-details-btn:active {
+    background-color: #afa8a8;
+    transform: scale(0.95); 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bookItem h4 {
+        font-size: 1rem; 
+    }
+
+    .view-details-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,105 @@
+/* Header Container Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    font-family:'Lucida Sans';
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+}
+
+/* Logo Container Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo Image Styling */
+.logo img {
+    width: 230px; 
+    height: auto;
+    object-fit: contain;
+}
+
+/* Search Input Styling */
+header input[type="text"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: 300px; 
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 2.1rem;
+}
+
+/* Navigation Links Styling */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #333; /* Dark hover effect */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Sign-In Button Styling */
+.buttonSignIn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonSignIn:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: flex-start;
+    }
+
+    .logo img {
+        width: 150px; /* Adjust logo size for smaller screens */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+        gap: 10px;
+    }
+
+    header input[type="text"] {
+        width: 100%; /* Full width for mobile view */
+        margin-bottom: 10px;
+    }
+
+    .buttonSignIn {
+        align-self: flex-end; /* Align button to the right on smaller screens */
+    }
+}

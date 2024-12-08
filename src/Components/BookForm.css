@@ -1,0 +1,119 @@
+/* .book-form-container {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #121212;
+  border-radius: 8px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+form input,
+form textarea {
+  width: 99%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #00bcd4;
+}
+
+button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #00bcd4;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008c9e;
+}
+
+.image-preview {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  border: 1px solid #444;
+  border-radius: 4px;
+} */
+.book-form-container {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #121212;
+  border-radius: 8px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 1rem; /* Base font size for the container */
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1.1rem; /* Slightly larger for labels */
+}
+
+form input,
+form textarea {
+  width: 99%;
+  padding: 0.7rem; /* Increase padding for better usability */
+  margin-top: 0.5rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  font-size: 1rem; /* Increase font size for inputs and textareas */
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #00bcd4;
+}
+
+button {
+  margin-right: 0.5rem;
+  padding: 0.6rem 1.2rem; /* Increase padding for buttons */
+  border: none;
+  border-radius: 4px;
+  background-color: #00bcd4;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem; /* Larger text on buttons */
+}
+
+button:hover {
+  background-color: #008c9e;
+}
+
+.image-preview {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
